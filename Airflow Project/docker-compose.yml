@@ -1,0 +1,8 @@
+# docker-compose.yml is a crucial file for defining and running multi-container Docker applications. It simplifies the management of complex setups by allowing you to define all your application's services, networks, and volumes in a single, declarative file.
+version : '3'
+services :
+  postgres:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres

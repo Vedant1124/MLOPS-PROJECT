@@ -1,0 +1,35 @@
+stages: # Kis stages mai chalana hai hamari dvc pipeline
+# Dvc is used for pipeline tracking
+
+  data_ingestion:
+    cmd: python src/data_ingestion.py # cmd means command to run the program.
+    deps: # Kon kon si file chahie data_ingestion ko run karane ke lie is deps (dependencies)
+      - src/data_ingestion.py
+      - config/paths_config.py
+    outs: # Kya output milta hai data_ingestion karne ke baad
+      - artifacts/ingested_data
+
+  data_processing:
+    cmd: python src/data_processing.py
+    deps:
+      - src/data_processing.py
+      - config/paths_config.py
+    outs:
+      - artifacts/processed_data
+
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+      - src/feature_engineering.py
+      - config/paths_config.py
+      - utils/helpers.py
+    outs:
+      - artifacts/engineered_data
+
+  model_training:
+    cmd: python src/model_training.py
+    deps:
+      - src/model_training.py
+      - config/paths_config.py
+    outs:
+      - artifacts/models

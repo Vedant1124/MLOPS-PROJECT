@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/DATA%20SCIENCE/Projects/MLOps%20Project/mlruns/132009950306909426/1d867a490cbd406e8af872509da87d9e/artifacts
+end_time: 1738155891863
+entry_point_name: ''
+experiment_id: '132009950306909426'
+lifecycle_stage: active
+run_id: 1d867a490cbd406e8af872509da87d9e
+run_name: receptive-boar-174
+run_uuid: 1d867a490cbd406e8af872509da87d9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738155886467
+status: 4
+tags: []
+user_id: Vedant

@@ -1,0 +1,13 @@
+2025-03-15 15:48:51,478 - INFO - Data Loading for Model training
+2025-03-15 15:48:51,607 - INFO - Data load sucesfull
+2025-03-15 15:48:51,607 - INFO - Data splitting started
+2025-03-15 15:48:51,623 - INFO - ['id', 'Unnamed0', 'Onlineboarding', 'DelayRatio', 'Inflightwifiservice', 'Class', 'TypeofTravel', 'FlightDistance', 'Inflightentertainment', 'Seatcomfort', 'Legroomservice', 'Onboardservice']
+2025-03-15 15:48:51,646 - INFO - Data splitting done
+2025-03-15 15:48:51,649 - INFO - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-03-15 15:48:51,657 - INFO - Training model started
+2025-03-15 15:49:21,963 - INFO - Model training completed
+2025-03-15 15:49:21,964 - INFO - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 15, 'n_estimators': 100}
+2025-03-15 15:49:21,967 - INFO - Model evaluation started
+2025-03-15 15:49:21,992 - INFO - Evaluation metrics : {'accuracy': 0.9422556390977443, 'precison': 0.942514613272113, 'recall': 0.9422556390977443, 'f1_score': 0.9420944330140292, 'confusion_matrix': [[9139, 336], [624, 6526]]}
+2025-03-15 15:49:21,998 - INFO - saving model
+2025-03-15 15:49:22,003 - INFO - Model saved sucesfully

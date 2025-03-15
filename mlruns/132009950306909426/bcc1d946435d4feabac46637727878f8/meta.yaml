@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/DATA%20SCIENCE/Projects/MLOps%20Project/mlruns/132009950306909426/bcc1d946435d4feabac46637727878f8/artifacts
+end_time: 1742033974684
+entry_point_name: ''
+experiment_id: '132009950306909426'
+lifecycle_stage: active
+run_id: bcc1d946435d4feabac46637727878f8
+run_name: illustrious-mule-588
+run_uuid: bcc1d946435d4feabac46637727878f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742033931403
+status: 3
+tags: []
+user_id: Vedant

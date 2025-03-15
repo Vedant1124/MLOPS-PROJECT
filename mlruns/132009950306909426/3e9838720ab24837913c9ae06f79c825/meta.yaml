@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/DATA%20SCIENCE/Projects/MLOps%20Project/mlruns/132009950306909426/3e9838720ab24837913c9ae06f79c825/artifacts
+end_time: 1738156041507
+entry_point_name: ''
+experiment_id: '132009950306909426'
+lifecycle_stage: active
+run_id: 3e9838720ab24837913c9ae06f79c825
+run_name: bustling-perch-39
+run_uuid: 3e9838720ab24837913c9ae06f79c825
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738156041335
+status: 4
+tags: []
+user_id: Vedant

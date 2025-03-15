@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/DATA%20SCIENCE/Projects/MLOps%20Project/mlruns/132009950306909426/48cd4b73091b4b4ca790b59679abb34a/artifacts
+end_time: 1738156123197
+entry_point_name: ''
+experiment_id: '132009950306909426'
+lifecycle_stage: active
+run_id: 48cd4b73091b4b4ca790b59679abb34a
+run_name: aged-bat-893
+run_uuid: 48cd4b73091b4b4ca790b59679abb34a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738156086486
+status: 3
+tags: []
+user_id: Vedant

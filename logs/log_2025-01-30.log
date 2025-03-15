@@ -1,0 +1,78 @@
+2025-01-30 00:07:16,679 - INFO - Data Ingestion has started
+2025-01-30 00:07:16,679 - INFO - Directory for Ingestion created
+2025-01-30 00:07:16,910 - INFO - Data loaded successfully with shape: (103904, 25)
+2025-01-30 00:07:16,960 - INFO - Data Splitted Sucessfully
+2025-01-30 00:07:17,475 - INFO - Training and testing data saved sucesffuly
+2025-01-30 00:07:18,883 - INFO - Starting the pipeline of Data Procesing
+2025-01-30 00:07:18,883 - INFO - Data Processinng Started
+2025-01-30 00:07:19,042 - INFO - Data read succesfull : Data shape : (83123, 25)
+2025-01-30 00:07:19,042 - INFO - Handling outliers : Columns = ['Flight Distance', 'Departure Delay in Minutes', 'Arrival Delay in Minutes', 'Checkin service']
+2025-01-30 00:07:19,078 - INFO - Outliers handled  Sucesffuully : (83123, 25)
+2025-01-30 00:07:19,078 - INFO - Handling null values
+2025-01-30 00:07:19,080 - INFO - Missing values handled sucessfully : Shape == (83123, 25)
+2025-01-30 00:07:19,463 - INFO - Processed data saved sucesfully
+2025-01-30 00:07:19,464 - INFO - Data Proccesing Pipeline COmpleted Sucessfully
+2025-01-30 00:07:22,331 - INFO - Starting your feature enginnering pipeline
+2025-01-30 00:07:22,331 - INFO - Loading data
+2025-01-30 00:07:22,507 - INFO - Data loaded sucesffuly
+2025-01-30 00:07:22,507 - INFO - Starting Feature Construction
+2025-01-30 00:07:22,510 - INFO - Feature Construction done sucesfully
+2025-01-30 00:07:22,510 - INFO - Starting Binning of Age Column
+2025-01-30 00:07:22,528 - INFO - Binning of Age Column Sucesfull
+2025-01-30 00:07:22,528 - INFO - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-01-30 00:07:22,579 - INFO - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-01-30 00:07:22,579 - INFO - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-01-30 00:07:22,579 - INFO - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-01-30 00:07:22,579 - INFO - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-01-30 00:07:22,579 - INFO - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-01-30 00:07:22,579 - INFO - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-01-30 00:07:22,579 - INFO - Label Encoding sucesffull
+2025-01-30 00:07:22,579 - INFO - Starting Feature Selection
+2025-01-30 00:07:22,859 - INFO - Mutual Information Table is : 
+                              Feature  Mutual Information
+1                                  id            0.684196
+0                          Unnamed: 0            0.684196
+13                    Online boarding            0.211560
+25                        Delay Ratio            0.204589
+8               Inflight wifi service            0.163365
+6                               Class            0.134928
+5                      Type of Travel            0.114626
+7                     Flight Distance            0.091491
+15             Inflight entertainment            0.091207
+14                       Seat comfort            0.077452
+17                   Leg room service            0.060770
+16                   On-board service            0.056898
+10             Ease of Online booking            0.052302
+21                        Cleanliness            0.049877
+4                                 Age            0.046463
+18                   Baggage handling            0.042174
+20                   Inflight service            0.040770
+19                    Checkin service            0.032409
+12                     Food and drink            0.025753
+26                          Age Group            0.021902
+3                       Customer Type            0.017990
+11                      Gate location            0.012826
+23           Arrival Delay in Minutes            0.006737
+24                        Total Delay            0.005945
+22         Departure Delay in Minutes            0.003023
+9   Departure/Arrival time convenient            0.002004
+2                              Gender            0.000042
+2025-01-30 00:07:22,866 - INFO - Top features : ['id', 'Unnamed: 0', 'Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Flight Distance', 'Inflight entertainment', 'Seat comfort', 'Leg room service', 'On-board service']
+2025-01-30 00:07:22,866 - INFO - Feature Selection Sucesfull
+2025-01-30 00:07:22,869 - INFO - Saving your data ...
+2025-01-30 00:07:23,141 - INFO - Data Saved succesfully at ./artifacts\engineered_data\final_df.csv
+2025-01-30 00:07:23,141 - INFO - Your FE pipeline sucesfully done..
+2025-01-30 00:07:23,141 - INFO - End of FE pipeline
+2025-01-30 00:07:29,586 - INFO - Data Loading for Model training
+2025-01-30 00:07:29,677 - INFO - Data load sucesfull
+2025-01-30 00:07:29,677 - INFO - Data splitting started
+2025-01-30 00:07:29,682 - INFO - ['id', 'Unnamed0', 'Onlineboarding', 'DelayRatio', 'Inflightwifiservice', 'Class', 'TypeofTravel', 'FlightDistance', 'Inflightentertainment', 'Seatcomfort', 'Legroomservice', 'Onboardservice']
+2025-01-30 00:07:29,697 - INFO - Data splitting done
+2025-01-30 00:07:29,699 - INFO - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-01-30 00:07:29,701 - INFO - Training model started
+2025-01-30 00:08:05,488 - INFO - Model training completed
+2025-01-30 00:08:05,488 - INFO - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 15, 'n_estimators': 100}
+2025-01-30 00:08:05,491 - INFO - Model evaluation started
+2025-01-30 00:08:05,519 - INFO - Evaluation metrics : {'accuracy': 0.9422556390977443, 'precison': 0.942514613272113, 'recall': 0.9422556390977443, 'f1_score': 0.9420944330140292, 'confusion_matrix': [[9139, 336], [624, 6526]]}
+2025-01-30 00:08:05,530 - INFO - saving model
+2025-01-30 00:08:05,535 - INFO - Model saved sucesfully
