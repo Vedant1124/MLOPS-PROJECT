@@ -15,6 +15,7 @@ Requires-Dist: flask
 Requires-Dist: pylint
 Requires-Dist: flake8
 Requires-Dist: black
+Requires-Dist: python3
 Dynamic: author
 Dynamic: requires-dist
 Dynamic: requires-python

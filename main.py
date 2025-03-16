@@ -17,7 +17,7 @@ if __name__ =="__main__":
         ingestion.split_data(train_path=TRAIN_DATA_PATH,test_path=TEST_DATA_PATH)
 
         processor = DataProcessor()
-        processor.run()
+        processor.run() 
 
         # FE
         feature_engineer = FeatureEngineer()

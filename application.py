@@ -6,7 +6,7 @@ app = Flask(__name__) # FLASK app started below this everything comes under FLAS
 
 model = joblib.load(MODEL_SAVE_PATH)
 
-@app.route("/",methods = ["GET","POST"]) # Flask se ham Website se data lerahe hai using GET aur POST kar rahe hai apne output ko website pe but Website mai keval POST hi kar rahe hai...website se jo bhi data aega usko Flask ke andar bhejenge using POST
+@app.route("/",methods = ["GET","POST"]) # Flask se ham Website se data lerahe hai using GET aur POST k ar rahe hai apne output ko website pe but Website mai keval POST hi kar rahe hai...website se jo bhi data aega usko Flask ke andar bhejenge using POST
 def home():
     if request.method=="POST":
         try:

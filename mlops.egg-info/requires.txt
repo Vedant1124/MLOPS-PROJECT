@@ -9,3 +9,4 @@ flask
 pylint
 flake8
 black
+python3
