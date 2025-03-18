@@ -69,7 +69,7 @@ pipeline {
                 script { 
                     // Scanning Docker Image
                     echo 'Scanning Docker Image...' 
-                    sh "trivy image mlops.latest --format table -o trivy-image-scan-report.html"
+                    sh "trivy image mlops:${BUILD_NUMBER} --format table -o trivy-image-scan-report.html"
                 }
             }
         }
