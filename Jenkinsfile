@@ -88,6 +88,17 @@ pipeline {
                 }
             }
         }
-    }
+        stage('AWS Deployement') { 
+            steps {
+                script { 
+                    // AWS Deployement
+                    echo 'Pushing Docker Image...' 
+                    sh "aws ecs update-service --cluster Mlops_project --service Mlops_service --force-new-deployment"
+                    }
+                }
+            }
+        }
 }
+    
+
 
